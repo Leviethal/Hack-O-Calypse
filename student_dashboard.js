@@ -3,17 +3,17 @@ const recentEvents = [
     {
       title: "AI Workshop",
       description: "A hands-on workshop on AI and ML technologies.",
-      image: "https://via.placeholder.com/1200x500?text=AI+Workshop",
+      image: "1.jpg",
     },
     {
       title: "Quantum Computing Seminar",
       description: "Explore the latest trends in quantum computing.",
-      image: "https://via.placeholder.com/1200x500?text=Quantum+Seminar",
+      image: "2.jpg",
     },
     {
       title: "Robotics Expo",
       description: "Showcase of the latest robotics technologies and innovations.",
-      image: "https://via.placeholder.com/1200x500?text=Robotics+Expo",
+      image: "3.jpg",
     },
   ];
   
