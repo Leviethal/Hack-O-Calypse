@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Connect</title>
+  <link rel="stylesheet" href="student_dashboard.css">
+</head>
+<body>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2024/11/17/06/20241117065959-3SPTUBJ2.js"></script>
+  <header>
+    <div class="header-left">
+      <div class="icon">📘</div>
+      <span class="logo-text">Student Connect</span>
+    </div>
+    <div class="header-right">
+      <div class="notification">🔔</div>
+      <span class="user-name" id="userNameDisplay"><a href="sprofile.html">MY PROFILE 👋
+        
+      </a>
+        
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <h1>Welcome back, <span id="userName">Hemant</span>! 👋</h1>
+    </section>
+
+    <!-- Recent Events Slider -->
+    <section class="slider-section">
+      <h2>Recent Events</h2>
+      <div class="slider-container">
+        <div class="slider" id="event-slider">
+          <!-- Slides will be dynamically inserted by JavaScript -->
+        </div>
+        <button class="slider-btn prev-btn" onclick="prevSlide()">&#8249;</button>
+        <button class="slider-btn next-btn" onclick="nextSlide()">&#8250;</button>
+      </div>
+    </section>
+
+    <!-- Options Section -->
+    <section class="options-section">
+      <div class="column">
+        <button class="option-button"><a href="sproject.html">NEW PROJECT</a></button>
+        <button class="option-button">Research Opportunities</button>
+      </div>
+      <div class="column">
+        <button class="option-button">Contribute to Current Project</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Student Connect. All rights reserved.</p>
+  </footer>
+
+  <script src="student_dashboard.js"></script>
+</body>
+</html>

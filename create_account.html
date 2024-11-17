@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="create_login.css">
+</head>
+<body class="create-account-page">
+    <header>
+        <img src="logo.png" alt="College Logo">
+        <h1>Welcome to IIT Jammu</h1>
+    </header>
+    <div class="login-container">
+        <h1>Create Account</h1>
+        <form action="/create-account" method="POST">
+            <div class="input-field">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <!-- Dropdown for selecting user role -->
+            <div class="input-field">
+                <label for="role">Select your role:</label>
+                <select id="role" name="role" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+            </div>
+            <button type="submit" class="login-btn">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <footer>
+        &copy; 2024 IIT Jammu. All rights reserved.
+    </footer>
+</body>
+</html>

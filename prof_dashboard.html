@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professor Dashboard</title>
+  <link rel="stylesheet" href="prof_dashboard.css">
+</head>
+<body>
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2024/11/17/06/20241117065959-3SPTUBJ2.js"></script>
+  <header>
+    <h1>Professor Dashboard</h1>
+    <p class="subtitle">Manage Your Projects and Applications</p>
+    <nav>
+      <ul>
+        <li><a href="tprofile.html">Professor Profile</a></li>
+      </ul>
+</nav>
+  </header>
+
+  <main>
+    <!-- Create New Project Section -->
+    <section class="create-project-section">
+      <h2>Create a New Project</h2>
+      <form id="createProjectForm">
+        <label for="title">Project Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="requirements">Requirements:</label>
+        <input type="text" id="requirements" name="requirements" placeholder="e.g., Python, Data Analysis" required>
+
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" required>
+
+        <button type="submit">Create Project</button>
+      </form>
+    </section>
+
+    <!-- Existing Projects Section -->
+    <section class="projects-section">
+      <h2>Your Projects</h2>
+      <div id="projects-list" class="projects-list">
+        <!-- Projects will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications-section" class="applications-section">
+      <!-- Applications will be dynamically displayed here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Professor Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="prof_dashboard.js"></script>
+</body>
+</html>

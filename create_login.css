@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: navy;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    padding: 10px 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    flex-direction: column; /* Stack logo and text vertically */
+}
+
+header img {
+    height: 50px;
+    margin-bottom: 5px; /* Adds spacing between logo and text */
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+/* Page Specific Backgrounds */
+body.login-page {
+    background: url('loginbg.jpg') no-repeat center center/cover;
+}
+
+body.create-account-page {
+    background: url('createbg.jpg') no-repeat center center/cover;
+}
+
+/* Container Styling */
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 100px 0; /* Adjust for header and footer */
+}
+.input-field {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-field label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-field input:focus {
+    border-color: #0072ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 114, 255, 0.5);
+}
+
+/* Buttons Styling */
+.login-btn {
+    background: #0072ff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background: #005bb5;
+}
+
+/* Links */
+a {
+    color: #0072ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Flash Messages */
+ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+li.success {
+    color: green;
+    font-size: 14px;
+}
+
+li.danger {
+    color: red;
+    font-size: 14px;
+}

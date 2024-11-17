@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #191c2f;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .notification {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .user-name {
+    font-size: 16px;
+  }
+  
+  /* Anchor Tag Reset */
+  a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the parent element's color */
+    font-weight: bold; /* Make links bold */
+  }
+  
+  a:hover {
+    text-decoration: none; /* No underline on hover */
+    color: inherit; /* No color change on hover */
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .welcome-section h1 {
+    font-size: 24px;
+    color: #4f46e5;
+  }
+  
+  /* Slider Section */
+  .slider-section {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .slide h3 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  
+  .slide p {
+    margin: 0 20px 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Slider Buttons */
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  
+  .slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  /* Options Section */
+  .options-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 40px; /* Add space below the buttons */
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .option-button {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4f46e5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .option-button:hover {
+    background-color: #3733a3;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0; /* Increased padding for better spacing */
+    background-color: #191c2f;
+    color: white;
+    margin-top: 20px; /* Add space between the footer and above content */
+}

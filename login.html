@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="create_login.css">
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const role = document.getElementById('role').value;
+
+            if (role === "student") {
+                window.location.href = "student_dashboard.html";
+            } else if (role === "teacher") {
+                window.location.href = "prof_dashboard.html";
+            } else {
+                alert("Please select a role.");
+            }
+        }
+    </script>
+</head>
+<body class="login-page">
+    <header>
+        <img src="logo.png" alt="College Logo">
+        <h1>WELCOME TO IIT JAMMU</h1>
+    </header>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form onsubmit="handleLogin(event)">
+            <div class="input-field">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <!-- Dropdown for selecting user role -->
+            <div class="input-field">
+                <label for="role">Select your role:</label>
+                <select id="role" name="role" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="create_account.html">Create one</a></p>
+    </div>
+    <footer>
+        &copy; 2024 IIT Jammu. All rights reserved.
+    </footer>
+</body>
+</html>

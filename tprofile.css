@@ -1,0 +1,164 @@
+/* Basic Styling */
+body {
+    font-family: "Times New Roman", sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #181c32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.profile {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.profile-image {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.profile-info h2 {
+    color: #2c3e50;
+}
+
+.profile-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.profile-info h3 {
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+/* Contact Info & Courses */
+.contact,
+.courses {
+    margin-top: 20px;
+}
+
+.contact p,
+.courses ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.courses li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height:150px;
+}
+}
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* Content styling */
+.container {
+    padding-left: 300px; /* Adding space for sidebar */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

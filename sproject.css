@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+}
+
+/* Header Styles */
+header {
+  background-color: #191C2F;
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+header .subtitle {
+  margin-top: 20px;
+  font-size: 32px;
+  color: #d9e6ff;
+}
+
+/* Container for Projects */
+.container {
+  padding: 20px 40px;
+}
+
+/* Projects List */
+.projects-list {
+  padding: 20px;
+}
+
+/* Individual Project Card */
+.project-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Enable positioning for children */
+}
+
+.project-card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.project-card p {
+  margin: 5px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.project-card .description {
+  margin-top: 10px;
+  color: #333;
+  font-style: italic;
+}
+
+/* Button Container */
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.project-card button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-card button:hover {
+  filter: brightness(1.1); /* Slightly brighten on hover */
+}
+
+.project-card .apply-button {
+  background-color: #191C2F;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-card .apply-button:hover {
+  
+  background-color: #292E4A; /* Lightens the button on hover */
+}
+/* Pagination Styles */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.pagination-container label {
+  margin-right: 5px;
+  color: #555;
+}
+
+.pagination-container select {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.pagination-container .page-info {
+  margin-left: 15px;
+  color: #555;
+}
+
+.pagination-container .pagination-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-container .pagination-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination-container .pagination-btn:hover:not(:disabled) {
+  background-color: #d0d0d0;
+}
+

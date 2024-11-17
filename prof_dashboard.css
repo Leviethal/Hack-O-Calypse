@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #191c2f;
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header .subtitle {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Create Project Section */
+  .create-project-section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-project-section h2 {
+    margin-top: 0;
+  }
+  
+  .create-project-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .create-project-section label {
+    font-weight: bold;
+  }
+  
+  .create-project-section input,
+  .create-project-section textarea,
+  .create-project-section button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .create-project-section button {
+    background-color: #46e589b0;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .create-project-section button:hover {
+    background-color: #3733a3;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    margin-top: 20px;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    margin: 0 0 10px;
+  }
+  
+  .project-card p {
+    margin: 5px 0;
+  }
+  
+  /* Applications Section */
+  .applications-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .applications-section h2 {
+    margin-top: 0;
+  }
+  
+  .applications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .application-card {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .application-card p {
+    margin: 5px 0;
+  }
+  
+  .manage-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .manage-buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .manage-buttons .accept-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .manage-buttons .accept-btn:hover {
+    background-color: #218838;
+  }
+  
+  .manage-buttons .decline-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .manage-buttons .decline-btn:hover {
+    background-color:#c82333;
+}
