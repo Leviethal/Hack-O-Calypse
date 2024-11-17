@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f7;
+    color: #333;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #00274d;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  /* Main Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  /* Profile Section */
+  .profile {
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+  }
+  
+  .profile:hover {
+    transform: scale(1.05);
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4caf50;
+  }
+  
+ 
+
+    .student-name {
+        font-size: 1.8rem;
+        color: #00274d;
+        margin: 1rem 0 0.5rem;
+      }
+      
+      .student-info {
+        font-size: 1rem;
+        color: #4caf50;
+      }
+      
+      /* Details Section */
+      .details {
+        width: 100%;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        transition: transform 0.3s;
+      }
+      
+      .details:hover {
+        transform: translateY(-5px);
+      }
+      
+      .details h3 {
+        color: #00274d;
+        margin-bottom: 1rem;
+      }
+      
+      .details ul {
+        list-style-type: square;
+        padding-left: 1.5rem;
+        position: relative;
+        overflow: hidden; /* Ensures animations don't spill out */
+      }
+      
+/* List Items */
+.details ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  padding: 0.5rem;
+  background-color: #e9f5f3;
+  border-radius: 4px;
+  position: relative;
+  text-align: left;
+}
+
+/* Dark green shadow effect on hover */
+.details ul li:hover {
+  transform: scale(1.05); /* Slight scaling effect */
+  box-shadow: 0 0 10px #004d00, 
+              0 0 20px #005c00, 
+              0 0 30px #006b00, 
+              0 0 40px #007a00, 
+              0 0 50px #008900; /* Dark green glow */
+  background-color: #d4f2e8;
+}
+
+      
+      .details ul li:active {
+        transform: scale(1.05); /* Slightly shrink back on click */
+      }
+      
+      /* Links */
+      .details p, .details a {
+        margin: 0.5rem 0;
+      }
+      
+      .details a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+      
+      .details a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Footer */
+      .footer {
+        background-color: #00274d;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+      }
