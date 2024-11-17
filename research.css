@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #a8ff65; /* Light Green */
+    background-color: #001f3f; /* Dark Blue */
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar */
+  .navbar {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #001a33; /* Slightly darker blue */
+    color: #a8ff65;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .page-title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Research Container */
+  .research-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .research-block {
+    background: #ffffff; /* White */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .research-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .research-block h2 {
+    margin: 0 0 0.5rem;
+    color: #001f3f; /* Dark Blue */
+    font-size: 1.5rem;
+  }
+  
+  .research-block p {
+    margin: 0;
+    color: #333; /* Dark text for contrast */
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #001a33;
+    color: #a8ff65;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
